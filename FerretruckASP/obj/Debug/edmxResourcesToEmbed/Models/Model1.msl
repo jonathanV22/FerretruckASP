@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ferretruckModelStoreContainer" CdmEntityContainer="ferretruckEntities">
+    <EntitySetMapping Name="cat_product">
+      <EntityTypeMapping TypeName="ferretruckModel.cat_product">
+        <MappingFragment StoreEntitySet="cat_product">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="codigo_p" ColumnName="codigo_p" />
+          <ScalarProperty Name="id_c" ColumnName="id_c" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categoria">
+      <EntityTypeMapping TypeName="ferretruckModel.categoria">
+        <MappingFragment StoreEntitySet="categoria">
+          <ScalarProperty Name="id_c" ColumnName="id_c" />
+          <ScalarProperty Name="nombre_cat" ColumnName="nombre_cat" />
+          <ScalarProperty Name="descripcionn" ColumnName="descripcionn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cuenta">
+      <EntityTypeMapping TypeName="ferretruckModel.cuenta">
+        <MappingFragment StoreEntitySet="cuenta">
+          <ScalarProperty Name="id_c" ColumnName="id_c" />
+          <ScalarProperty Name="nombre_c" ColumnName="nombre_c" />
+          <ScalarProperty Name="id_tc" ColumnName="id_tc" />
+          <ScalarProperty Name="id_u" ColumnName="id_u" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_venta">
+      <EntityTypeMapping TypeName="ferretruckModel.detalle_venta">
+        <MappingFragment StoreEntitySet="detalle_venta">
+          <ScalarProperty Name="id_detalle" ColumnName="id_detalle" />
+          <ScalarProperty Name="catidad" ColumnName="catidad" />
+          <ScalarProperty Name="precio_total" ColumnName="precio_total" />
+          <ScalarProperty Name="estado_venta" ColumnName="estado_venta" />
+          <ScalarProperty Name="descuento" ColumnName="descuento" />
+          <ScalarProperty Name="codigo_p" ColumnName="codigo_p" />
+          <ScalarProperty Name="no_folio" ColumnName="no_folio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="producto">
+      <EntityTypeMapping TypeName="ferretruckModel.producto">
+        <MappingFragment StoreEntitySet="producto">
+          <ScalarProperty Name="codigo_p" ColumnName="codigo_p" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="oferta" ColumnName="oferta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_cuenta">
+      <EntityTypeMapping TypeName="ferretruckModel.tipo_cuenta">
+        <MappingFragment StoreEntitySet="tipo_cuenta">
+          <ScalarProperty Name="id_tc" ColumnName="id_tc" />
+          <ScalarProperty Name="nombre_tc" ColumnName="nombre_tc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_usuario">
+      <EntityTypeMapping TypeName="ferretruckModel.tipo_usuario">
+        <MappingFragment StoreEntitySet="tipo_usuario">
+          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+          <ScalarProperty Name="nombre_tipo" ColumnName="nombre_tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="ferretruckModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="id_u" ColumnName="id_u" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="rut" ColumnName="rut" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="venta">
+      <EntityTypeMapping TypeName="ferretruckModel.venta">
+        <MappingFragment StoreEntitySet="venta">
+          <ScalarProperty Name="no_folio" ColumnName="no_folio" />
+          <ScalarProperty Name="precio_final" ColumnName="precio_final" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id_u" ColumnName="id_u" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

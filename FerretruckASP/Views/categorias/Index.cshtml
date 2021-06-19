@@ -1,0 +1,40 @@
+@model IEnumerable<FerretruckASP.Models.categoria>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Categorias</h2>
+
+<p>
+    @Html.ActionLink("Agregar categoria", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre_cat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcionn)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre_cat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcionn)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id_c }) |
+            @Html.ActionLink("Detalle", "Details", new { id=item.id_c }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.id_c })
+        </td>
+    </tr>
+}
+
+</table>

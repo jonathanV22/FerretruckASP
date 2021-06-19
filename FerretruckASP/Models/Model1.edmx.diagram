@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f86dd9ce68545f1acfcdc740ba0bbfc" Name="Diagram1">
+        <EntityTypeShape EntityType="ferretruckModel.cat_product" Width="1.5" PointX="7.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.categoria" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.cuenta" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.detalle_venta" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.producto" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.tipo_cuenta" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.tipo_usuario" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.usuario" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ferretruckModel.venta" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="ferretruckModel.FK__cat_produ__codig__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="ferretruckModel.FK__cat_produc__id_c__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="ferretruckModel.FK__cuenta__id_tc__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="ferretruckModel.FK__cuenta__id_u__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="ferretruckModel.FK__detalle_v__codig__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="ferretruckModel.FK__detalle_v__no_fo__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="ferretruckModel.FK__usuario__id_tipo__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="ferretruckModel.FK__venta__id_u__412EB0B6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
